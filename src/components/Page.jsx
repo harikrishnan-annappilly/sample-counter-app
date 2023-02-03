@@ -12,6 +12,7 @@ function Page(props) {
     function handlePlus(value) {
         console.log("value=", value);
 
+        // setCount(count+1); this wont work while using the above logic
         //below code can be made simple but using `setCount((c)=>c+1);`
         setCount((c) => {
             let d = c;
