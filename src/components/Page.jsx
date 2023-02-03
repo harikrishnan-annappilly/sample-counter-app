@@ -11,8 +11,13 @@ function Page(props) {
 
     function handlePlus(value) {
         console.log("value=", value);
-        const data = count + 1;
-        setCount((count) => data);
+
+        //below code can be made simple but using `setCount((c)=>c+1);`
+        setCount((c) => {
+            let d = c;
+            d += 1;
+            return d;
+        });
     }
 
     return (
